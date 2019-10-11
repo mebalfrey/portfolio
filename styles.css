@@ -1,0 +1,216 @@
+
+/* Global styles */
+/* border box fix */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+ color: gray;
+
+}
+a {
+    color: gray;
+}
+a:hover {
+    text-decoration: none;
+}
+h1, h2 {
+font-family: 'Lobster Two', cursive;
+  font-weight: 400;
+  color: gray;
+}
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 36px;
+  margin-top: 0;
+}
+h3 {margin: 0;
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
+}
+
+.uppercase { 
+	text-transform: uppercase;
+}
+
+
+/* Header & Footer */
+header, 
+footer {
+  background: white;
+  color: gray;
+}
+header h1,
+header h2 {
+    color: #gray;
+    margin: 0;
+}
+
+/* Header styles only */
+header {
+  /*text-align: center;*/
+}
+.profile-img {
+  /*width: 300px;*/
+  border-radius: 50%;
+  /*float: left;*/
+  /*margin-right: 30px;*/
+}
+
+/* Footer styles only */
+footer {
+  text-align: center;
+}
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+footer h2 {
+  font-size: 20px;
+  display: inline-block;
+}
+
+
+/* Work Experience */
+.work {
+    background: white;
+}
+h3 ~ p {margin: 0;
+}
+.job-description{margin-bottom: 25px;}
+.job-description p:first-of-type {
+	margin-top: 0;
+}
+
+
+
+/* Education */
+.education {
+    background: white;
+}
+p + h3 {margin-top: 24px}
+
+
+
+
+
+
+
+
+/*Navigation*/
+
+
+.navbar body{
+	background: white;
+	width: 100%;
+	font: 10px 'Montserrat', sans-serif;
+} 
+
+.navbar a {
+	text-decoration: none;
+	display: block;
+	width: 100%;
+}
+
+.navbar ul {
+	text-align: left;
+	list-style: none;
+	background: white;
+	text-color: gray;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	
+}
+.navbar ul li {
+	font: 16px 'Montserrat', serif;
+	display: inline-block;
+	position: relative;
+	padding: 10px 15px;
+	background: white;
+	cursor: pointer;
+}
+.navbar ul li:hover {
+color: #88DCD7; 
+	background: pink;
+}
+.navbar ul li ul {
+	padding:0;
+	position: absolute;
+	left:-999em;
+	width: auto;
+}
+.navbar ul li:hover ul {
+	display: block;
+	left: 0px;
+		color: gray; 
+	background: pink;
+}
+
+.navbar ul li ul li{
+	background: pink;
+	display:block;
+	color: gray;	
+}
+.navbar ul li ul li:hover{
+	background: white;
+	color: pink; }
+
+
+
+/* Media Queries */
+@media (min-width: 900px) {
+.column-narrow {
+  width: 35%;
+  float: left;
+}
+.column-wide {
+  width: 62%;
+  float: left;
+padding-left: 20px;
+}
+}
+
+@media (max-width: 899px) {
+	header {
+		text-align: center;
+	}
+	.profile-img {width: 200px;}
+	
+	
+	
+	
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 0px=;
+}
+
+.col-1 {width: 33.33%;}
+.col-2 {width: 33.33%;}
+.col-3 {width: 33.33%;}
+	
+	
+	
